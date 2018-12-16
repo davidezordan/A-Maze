@@ -6,6 +6,8 @@ Explore the maze, collect the coins and find the treasure!
 
 ![Screenshot](Screenshot.jpg)
 
+![Screenshot](Screenshot-1.jpg)
+
 The original project has been extended with the following functionalities:
 - added splash screen and game over scenes.
 - added coins counter on overlay menu.
