@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour {
  		var timeSpan = TimeSpan.FromSeconds(timeLeftSeconds);
  		string timeText = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
 
-		Debug.Log("Time: " + timeText);
 		UpdateRemainingTime(timeText);
     }
 
