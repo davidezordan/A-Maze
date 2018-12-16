@@ -43,3 +43,4 @@ If needed, a build targeting Google Cardboard has already been provided compress
 
 ### Related Repositories
 - [VR Software Development - A Maze](https://github.com/udacity/VR-Software-Development_A-Maze)
+- [FPS script](http://wiki.unity3d.com/index.php/FramesPerSecond)
