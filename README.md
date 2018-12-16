@@ -12,6 +12,7 @@ The original project has been extended with the following functionalities:
 - added splash screen and game over scenes.
 - added coins counter on overlay menu.
 - added customizable timer.
+- customized maze.
 
 # Getting Started
 
