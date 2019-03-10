@@ -1,5 +1,5 @@
-# Udacity VR Foundations Nanodegree
-## A Maze - Davide Zordan
+# A Maze
+## Davide Zordan
 
 # Introduction 
 Explore the maze, collect the coins and find the treasure!
