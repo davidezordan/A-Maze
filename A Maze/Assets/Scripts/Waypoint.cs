@@ -134,8 +134,6 @@ public class Waypoint : MonoBehaviour
 		_audio_source.Play();
 
 		Camera.main.transform.parent.transform.position = gameObject.transform.position;
-
-		Debug.Log("Waypoint Clicked");
 	}
 
 
