@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LoadingTextAnimation : MonoBehaviour {
 
 	private UnityEngine.UI.Text _text;
+    private string delimiter = ".";
 
 	void Start () {
 		InvokeRepeating("UpdateLoadingText", 1f, 1f);
@@ -12,6 +11,6 @@ public class LoadingTextAnimation : MonoBehaviour {
 	}
 	
 	void UpdateLoadingText () {
-		_text.text += '.';
+		_text.text += delimiter;
 	}	
 }

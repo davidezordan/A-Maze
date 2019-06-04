@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,13 +18,7 @@ public class GameManager : MonoBehaviour {
 		timeLeftSeconds = levelTimeMinutes * 60;
 		ResetCoins();
 	}
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
 	void Update () {
 		timeLeftSeconds -= Time.deltaTime;
 		if (timeLeftSeconds < 0) {
@@ -60,8 +53,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void IncrementCoins() {
-		Debug.Log("Increment coins called");
-
 		coinCount++;
 		UpdateCointText();
 	}

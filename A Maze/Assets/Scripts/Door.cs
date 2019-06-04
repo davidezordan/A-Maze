@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Door : MonoBehaviour {
 	private float timer = 0f;
@@ -11,8 +8,8 @@ public class Door : MonoBehaviour {
 	private Quaternion rightDoorEndRotation;
 	private bool isLocked = true;
 	private bool isOpening;
-	private bool isDoorOpen;
 	private AudioSource audioSource;
+    private Collider[] colliders;
 
 	public GameObject leftDoor;
 	public GameObject rightDoor;
@@ -22,8 +19,9 @@ public class Door : MonoBehaviour {
 
 	void Start () {
 		audioSource = this.GetComponent<AudioSource>();
+        colliders = gameObject.GetComponentsInChildren<Collider>();
 
-		if (leftDoor && rightDoor) {
+        if (leftDoor && rightDoor) {
 			leftDoorStartRotation = Quaternion.Euler(leftDoor.transform.rotation.eulerAngles);
 			rightDoorStartRotation = Quaternion.Euler(rightDoor.transform.rotation.eulerAngles);
 
@@ -48,8 +46,7 @@ public class Door : MonoBehaviour {
 
     private void DisableColliders()
     {
-		var colliders = gameObject.GetComponentsInChildren<Collider>();
-		foreach(var collider in colliders) {
+		foreach(var collider in this.colliders) {
 			collider.enabled = false;
 		}
     }
