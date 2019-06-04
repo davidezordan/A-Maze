@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Coin : MonoBehaviour {
 
@@ -14,8 +12,6 @@ public class Coin : MonoBehaviour {
 	}
 	
 	public void onClicked() {
-		Debug.Log("Coin clicked");
-
 		if (manager)
 			manager.IncrementCoins();
 	}
